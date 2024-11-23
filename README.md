@@ -2,7 +2,7 @@
 Assignments of Deep Learning Course
 ## 1, Clone the project:
 ```
-git clone https://github.com/Cr4nky04/BKAI-Polyp-Competition.git
+git clone https://github.com/phongtdd/Semantic-Segmentation.git
 ```
 ## 2, Download the checkpoint by this link 
 > [Google Drive](https://drive.google.com/drive/u/0/folders/1DtXDlLKZhf94AxhL1IHokIIIwEXTqp-G)
