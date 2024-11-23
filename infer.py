@@ -24,8 +24,13 @@ model = UnetPlusPlus(
 # Load the model checkpoint
 checkpoint_path = "unet_model.pth"  # Update with your model checkpoint path
 checkpoint = torch.load(checkpoint_path, map_location=device)
+if "module." in list(checkpoint["model"].keys())[0]:
+    checkpoint["model"] = {k.replace("module.", ""): v for k, v in checkpoint["model"].items()}
+
+# Load the state dict into the model
 model.load_state_dict(checkpoint["model"])
 model.eval()
+
 
 # Transform for input image
 val_transformation = Compose([
