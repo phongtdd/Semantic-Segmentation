@@ -1,0 +1,13 @@
+numpy
+torch
+albumentations
+torchsummary
+torchgeometry
+matplotlib
+pandas
+wandb
+segmentation-models-pytorch
+pillow
+opencv-python
+imageio
+kornia
